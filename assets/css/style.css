@@ -651,6 +651,20 @@ footer .icons i:hover {
   background-color: #fff;
   border-radius: 0;
   overflow-anchor: none;
+  font-family: "Baloo 2", cursive;
+  font-size: 18px;
+}
+
+@media (min-width: 576px) {
+  #faqs-acordeon .boton {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  #faqs-acordeon .boton {
+    font-size: 23px;
+  }
 }
 
 #faqs-acordeon i.fa-minus {
