@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Fontawesome -->
+    <link href="./assets/css/all.min.css" rel="stylesheet" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- My own css file -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <title>KACTIVA</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <!-- Navbar -->
+    <header id="header">
+      <nav
+        class="navbar fixed-top navbar-expand-lg navbar-light bg-color-defecto"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="./assets/img/logoInverted.png"
+              alt="logo"
+              class="img-fluid"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars fa-lg py-2 color-defecto"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link title"
+                  aria-current="page"
+                  href="./index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <div id="zumos-title" class="d-flex">
+                  <a
+                    class="nav-link title p-title-zumo"
+                    href="./productos.html"
+                    role="button"
+                    >Zumos</a
+                  >
+                  <a
+                    class="nav-link title p-title-dropdown-arrow"
+                    href=""
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fas fa-chevron-down fa-xs"></i>
+                  </a>
+                </div>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a
+                      class="dropdown-item color-defecto fw-bold"
+                      href="./productos.html#linea-kesubidon"
+                      >Kesubidon</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider color-defecto" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item color-secundario-kemenos fw-bold"
+                      href="./productos.html#linea-kemenos"
+                      >Kemenos</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider color-defecto" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item color-secundario-ketepillo fw-bold"
+                      href="./productos.html#linea-ketepillo"
+                      >Ketepillo</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link title"
+                  aria-current="page"
+                  href="nosotros.html"
+                  >Quienes somos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link title"
+                  aria-current="page"
+                  href="./contacto.html"
+                  >Contacto</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link title active"
+                  aria-current="page"
+                  href="./faqs.html"
+                  >FAQs</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Inicio -->
+    <section id="faqs-inicio">
+      <div class="position-relative">
+        <div class="d-flex">
+          <img
+            src="./assets/img/faqs/think.jpeg"
+            class="w-75 mx-auto"
+            alt="Pareja"
+          />
+        </div>
+        <div class="rectangulo-productos-1"></div>
+        <div class="rectangulo-productos-2 d-flex">
+          <img src="./assets/img/logoSlim.png" class="m-auto" alt="Logo" />
+        </div>
+        <div class="rectangulo-productos-3"></div>
+      </div>
+    </section>
+
+    <!-- Preguntas -->
+
+    <section id="faqs-acordeon">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-8">
+            <div
+              class="accordion accordion-flush mi-acordeon"
+              id="accordionFlushExample"
+            >
+              <div class="p-4 text-center">
+                <h2 class="color-secundario-navy">Preguntas frecuentes</h2>
+                <p>
+                  Seguramente, la pregunta que te estás haciendo sobre nuestros
+                  productos ya se la ha hecho antes alguien. Por eso, te las
+                  recopilamos aquí.
+                </p>
+              </div>
+              <div class="ps-3 pt-4 text-start">
+                <h3 class="color-secundario-healthy">Compra</h3>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="btn boton collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    <h4 class="m-0">¿Dónde puedo comprar?</h4>
+                    <i class="fas fa-plus ms-auto"></i>
+                    <i class="fas fa-minus ms-auto"></i>
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Nuestros productos están disponibles en cadenas de
+                      supermercados como Carrefour, Aldi y MAS, además de muchos
+                      bares y restaurantes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button
+                    class="btn boton collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    <h4 class="m-0">¿Puedo comprar online?</h4>
+                    <i class="fas fa-plus ms-auto"></i>
+                    <i class="fas fa-minus ms-auto"></i>
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Actualmente no tenemos una tienda online, pero puedes
+                    adquirir nuestros zumos de forma online en páginas como la
+                    de Carrefour.
+                  </div>
+                </div>
+              </div>
+              <div class="ps-3 pt-4 text-start">
+                <h3 class="color-secundario-healthy">Ingredientes</h3>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button
+                    class="btn boton collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    <h4 class="m-0">¿Qué contienen los zumos?</h4>
+                    <i class="fas fa-plus ms-auto"></i>
+                    <i class="fas fa-minus ms-auto"></i>
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Frutas de origen nacional que son cuidadosamente
+                      seleccionadas y limpiadas para su posterior tratamiento en
+                      jugo, el cual preservará pulpa o no dependiendo del tipo
+                      de zumo y que se le añade al final. Por último, el
+                      resultado es pasteurizado lo preciso para mantener todo el
+                      sabor.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button
+                    class="btn boton collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFour"
+                  >
+                    <h4 class="m-0">
+                      Pero, ¿contienen aditivos, sabores sintéticos o
+                      conservantes?
+                    </h4>
+                    <i class="fas fa-plus ms-auto"></i>
+                    <i class="fas fa-minus ms-auto"></i>
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFour"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Los zumos de Kactiva no contienen ninguna de las tres
+                      cosas. Para su conservación, simplemente se lleva a cabo
+                      su pasteurización. Sin embargo, esto hace que su fecha de
+                      caducidad sea menor a otros zumos comerciales.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button
+                    class="btn boton collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFive"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFive"
+                  >
+                    <h4 class="m-0">¿Tienen gluten?</h4>
+                    <i class="fas fa-plus ms-auto"></i>
+                    <i class="fas fa-minus ms-auto"></i>
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFive"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Todos nuestros zumos son 100% libres de gluten.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSix">
+                  <button
+                    class="btn boton collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseSix"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseSix"
+                  >
+                    <h4 class="m-0">¿Contienen otros alérgenos?</h4>
+                    <i class="fas fa-plus ms-auto"></i>
+                    <i class="fas fa-minus ms-auto"></i>
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseSix"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingSix"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Determinados zumos pueden contener ciertos alérgenos como
+                    nueces, pero serán claramente especificado en la etiqueta.
+                    En cuanto al riesgo de contaminación, nuestros procesos de
+                    fabricación son llevados a cabo bajo estrictas políticas
+                    para eliminar dicho riesgo.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSeven">
+                  <button
+                    class="btn boton collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseSeven"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseSeven"
+                  >
+                    <h4 class="m-0">¿Contienen azúcar?</h4>
+                    <i class="fas fa-plus ms-auto"></i>
+                    <i class="fas fa-minus ms-auto"></i>
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseSeven"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingSeven"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    No añadimos azúcar durante su proceso de fabricación. Sin
+                    embargo, sí contienen el azúcar que trae la fruta de forma
+                    natural. Para saber la cantidad de azúcar no añadida, mire
+                    la información nutricional del etiquetado.
+                  </div>
+                </div>
+              </div>
+              <div class="ps-3 pt-4 text-start">
+                <h3 class="color-secundario-healthy">Consumo</h3>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingEight">
+                  <button
+                    class="btn boton collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseEight"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseEight"
+                  >
+                    <h4 class="m-0">¿Cómo conservo mis zumos de Kactiva?</h4>
+                    <i class="fas fa-plus ms-auto"></i>
+                    <i class="fas fa-minus ms-auto"></i>
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseEight"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingEight"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    La mejor forma de convervar los zumos de Kactiva para su
+                    consumo es en el frigorífico a una temperatura de entre 1 y
+                    6 grados centígrados.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingNine">
+                  <button
+                    class="btn boton collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseNine"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseNine"
+                  >
+                    <h4 class="m-0">Una vez abiertos, ¿cuándo consumir?</h4>
+                    <i class="fas fa-plus ms-auto"></i>
+                    <i class="fas fa-minus ms-auto"></i>
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseNine"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingNine"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Es recomendable consumir el zumo con un margen de 2 días una
+                    vez ha sido abierto.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-center pt-5">
+          ¿Tienes alguna otra duda que no está recogida? ¡No dudes en ponerte en
+          contacto con
+          <a
+            href="./contacto.html"
+            class="color-secundario text-decoration-none"
+            >nosotros</a
+          >!
+        </p>
+      </div>
+    </section>
+
+    <footer class="padding-top">
+      <div id="informacion" class="bg-color-secundario-navy pt-5">
+        <div class="container">
+          <div class="row">
+            <!-- RRSS -->
+            <div class="col-12 col-lg-6 text-center">
+              <div class="row">
+                <div class="col-12 col-lg-5">
+                  <img
+                    id="logo-pie"
+                    src="./assets/img/logo-navy.png"
+                    class="pb-4 pb-lg-0"
+                  />
+                </div>
+                <div class="col-12 col-lg-7 align-self-center">
+                  <h4 class="text-light pb-3">¡Visítanos en RRSS!</h4>
+                  <div class="d-flex w-100">
+                    <ul class="m-0 p-0 d-flex icons mx-auto">
+                      <li class="d-inline-block f-icon">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      </li>
+                      <li class="d-inline-block f-icon">
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                      </li>
+                      <li class="d-inline-block f-icon">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                      </li>
+                      <li class="d-inline-block f-icon">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                      </li>
+                      <li class="d-inline-block f-icon">
+                        <a href="#"><i class="fas fa-rss"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Form -->
+            <div class="col-12 col-lg-6 pt-5 pt-lg-0">
+              <div class="row">
+                <div class="col-12 pb-2 pb-lg-0 text-center">
+                  <h4 class="text-light">Mantente informado</h4>
+                  <p class="text-light">
+                    Sé el primero en conocer nuestras novedades.
+                  </p>
+                </div>
+
+                <div class="col-12 col-sm-10 col-md-8 col-lg-9 mx-auto pt-2">
+                  <div id="avisos" class="row rounded-pill mx-auto">
+                    <div class="col-12">
+                      <form action="#" class="row">
+                        <div class="d-inline-block d-flex ps-3 pe-0">
+                          <div class="form-group d-flex">
+                            <label class="d-inline-block d-flex">
+                              <i
+                                class="fas fa-envelope fa-lg align-items-center text-secondary my-auto"
+                              ></i>
+                            </label>
+                            <input
+                              type="text"
+                              name="user"
+                              placeholder="Correo"
+                              class="form-control shadow-none d-inline-block"
+                            />
+                          </div>
+                          <div class="d-inline-block ms-auto">
+                            <button type="submit" class="btn btn-defecto">
+                              SUSCRIBIRME
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Legal -->
+            <div class="col-12 text-center pt-5 pb-3">
+              <p class="text-secondary f-copyright">
+                © kactiva.com 2022 | <a href="#">Aviso legal</a> |
+                <a href="#">Política de cookies</a> |
+                <a href="#">Política de cookies</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

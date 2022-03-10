@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Fontawesome -->
+    <link href="./assets/css/all.min.css" rel="stylesheet" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- My own css file -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <title>KACTIVA</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <!-- Navbar -->
+    <header id="header">
+      <nav
+        class="navbar fixed-top navbar-expand-lg navbar-light bg-color-defecto"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="./assets/img/logoInverted.png"
+              alt="logo"
+              class="img-fluid"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars fa-lg py-2 color-defecto"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link title"
+                  aria-current="page"
+                  href="./index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <div id="zumos-title" class="d-flex">
+                  <a
+                    class="nav-link title p-title-zumo"
+                    href="./productos.html"
+                    role="button"
+                    >Zumos</a
+                  >
+                  <a
+                    class="nav-link title p-title-dropdown-arrow"
+                    href=""
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fas fa-chevron-down fa-xs"></i>
+                  </a>
+                </div>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a
+                      class="dropdown-item color-defecto fw-bold"
+                      href="./productos.html#linea-kesubidon"
+                      >Kesubidon</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider color-defecto" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item color-secundario-kemenos fw-bold"
+                      href="./productos.html#linea-kemenos"
+                      >Kemenos</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider color-defecto" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item color-secundario-ketepillo fw-bold"
+                      href="./productos.html#linea-ketepillo"
+                      >Ketepillo</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link title active"
+                  aria-current="page"
+                  href="nosotros.html"
+                  >Quienes somos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link title"
+                  aria-current="page"
+                  href="./contacto.html"
+                  >Contacto</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link title" aria-current="page" href="./faqs.html"
+                  >FAQs</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Inicio -->
+    <section id="nosotros-inicio">
+      <div class="position-relative">
+        <div class="d-flex">
+          <img
+            src="./assets/img/nosotros/plaza.jpeg"
+            class="w-100 mx-auto"
+            alt="Plaza de España"
+          />
+        </div>
+        <div class="rectangulo-productos-1"></div>
+        <div class="rectangulo-productos-2"></div>
+        <div class="rectangulo-productos-3"></div>
+        <div class="rectangulo-nosotros text-center">
+          <img src="./assets/img/logoSlim.png" alt="Logo" />
+          <h2 class="color-secundario-navy">¿Conoces nuestra historia?</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- Historia -->
+    <section id="historia" class="pt-4">
+      <div class="container">
+        <!-- 1 -->
+        <div class="row pb-5">
+          <div class="col-md-8 text-center d-flex">
+            <div class="align-self-center">
+              <h2 class="color-secundario-healthy">
+                Érase una vez, dos amigos amantes de las frutas
+              </h2>
+              <p>
+                Que combinaban, en su día a día, distintas frutas y frutos secos
+                en batidos y zumos para afrontar su trabajo y el deporte con más
+                energía.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 text-center d-flex">
+            <img
+              src="./assets/img/nosotros/pears.png"
+              class="historia-img m-auto"
+              alt="Dos peras"
+            />
+          </div>
+        </div>
+        <div id="nosotros-cherry" class="nosotros-franja"></div>
+        <!-- 2 -->
+        <div class="row py-5">
+          <div class="col-md-8 text-center d-flex order-md-2">
+            <div class="align-self-center">
+              <h2 class="color-secundario-healthy">
+                Un día, se plantearon el vender sus zumos.
+              </h2>
+              <p class="mb-3">
+                Tras muchos amigos y familiares preguntándoles por los zumos que
+                les veían tomar y queriendo probarlos, estos dos amigos
+                devoradores de frutas se plantearon comenzar a venderlos.
+              </p>
+              <p>
+                Al principio no fue nada serio. En un local de uno de ellos,
+                comenzaron a producir y embotellar zumos para sus amigos y
+                familiares. Y a la iniciativa le llamaron
+                <strong>Kactiva</strong>, porque esa era la idea: ¡siempre
+                activos!
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 text-center order-md-1 pt-5 pt-md-0 d-flex">
+            <img
+              src="./assets/img/nosotros/jump.png"
+              class="historia-img m-auto"
+              alt="Persona saltando"
+            />
+          </div>
+        </div>
+        <div id="nosotros-kiwi" class="nosotros-franja"></div>
+        <!-- 3 -->
+        <div class="row py-5">
+          <div class="col-md-8 text-center d-flex">
+            <div class="align-self-center">
+              <h2 class="color-secundario-healthy">
+                Gustaron mucho, pero no fue fácil.
+              </h2>
+              <p class="mb-3">
+                Lo que comenzó como un pasatiempo, cada vez les requería más
+                trabajo para producir más y mejor.
+              </p>
+              <p>
+                Pero creían que sus zumos podían ser una alternativa saludable
+                para mejorar la vida de las personas, dándoles ese empujón de
+                energía. Querían dejar su <strong>huella en el mundo</strong>.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 text-center pt-5 pt-md-0 d-flex">
+            <img
+              src="./assets/img/nosotros/footprint.png"
+              class="historia-img rounded-circle m-auto"
+              alt="Dunas"
+            />
+          </div>
+        </div>
+        <div id="nosotros-apple" class="nosotros-franja"></div>
+        <!-- 4 -->
+        <div class="row py-5">
+          <div class="col-md-8 text-center d-flex order-md-2">
+            <div class="align-self-center">
+              <h2 class="color-secundario-healthy">
+                Y, un día, llegó su empujón.
+              </h2>
+              <p class="mb-3">
+                Un conocido de uno de sus amigos probó uno de los zumos y ¡le
+                encantó! No solo el sabor, sino también la idea detrás de ellos.
+                Por lo que decidió invertir en ellos, uniéndose otras personas.
+              </p>
+              <p>
+                Es entonces cuando comenzaron a expandir su negocio con
+                marketing, nuevos clientes como cafeterías y dos nuevas líneas
+                de porductos, Kemenos y Ketepillo. ¡Estaban
+                <strong>creciendo</strong>!
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 text-center order-md-1 pt-5 pt-md-0 d-flex">
+            <img
+              src="./assets/img/nosotros/juice-bottle.png"
+              class="historia-img rounded-circle m-auto"
+              alt="Botella de zumo"
+            />
+          </div>
+        </div>
+        <div id="nosotros-orange" class="nosotros-franja"></div>
+        <!-- 5 -->
+        <div class="row py-5">
+          <div class="col-md-8 text-center d-flex">
+            <div class="align-self-center">
+              <h2 class="color-secundario-healthy">Y aquí siguen.</h2>
+              <p class="mb-3">
+                Dedicados a Kactiva, con acuerdos con cadenas de supermercados y
+                con muchas ganas de seguir ayudando a las personas a vivir su
+                máximo.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 text-center pt-5 pt-md-0 d-flex">
+            <img
+              src="./assets/img/nosotros/moon.png"
+              class="historia-img rounded-circle m-auto"
+              alt="To the moon"
+            />
+          </div>
+        </div>
+      </div>
+      <div id="nosotros-apples" class="nosotros-franja"></div>
+    </section>
+
+    <footer class="padding-top">
+      <div id="informacion" class="bg-color-secundario-navy pt-5">
+        <div class="container">
+          <div class="row">
+            <!-- RRSS -->
+            <div class="col-12 col-lg-6 text-center">
+              <div class="row">
+                <div class="col-12 col-lg-5">
+                  <img
+                    id="logo-pie"
+                    src="./assets/img/logo-navy.png"
+                    class="pb-4 pb-lg-0"
+                  />
+                </div>
+                <div class="col-12 col-lg-7 align-self-center">
+                  <h4 class="text-light pb-3">¡Visítanos en RRSS!</h4>
+                  <div class="d-flex w-100">
+                    <ul class="m-0 p-0 d-flex icons mx-auto">
+                      <li class="d-inline-block f-icon">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      </li>
+                      <li class="d-inline-block f-icon">
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                      </li>
+                      <li class="d-inline-block f-icon">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                      </li>
+                      <li class="d-inline-block f-icon">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                      </li>
+                      <li class="d-inline-block f-icon">
+                        <a href="#"><i class="fas fa-rss"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Form -->
+            <div class="col-12 col-lg-6 pt-5 pt-lg-0">
+              <div class="row">
+                <div class="col-12 pb-2 pb-lg-0 text-center">
+                  <h4 class="text-light">Mantente informado</h4>
+                  <p class="text-light">
+                    Sé el primero en conocer nuestras novedades.
+                  </p>
+                </div>
+
+                <div class="col-12 col-sm-10 col-md-8 col-lg-9 mx-auto pt-2">
+                  <div id="avisos" class="row rounded-pill mx-auto">
+                    <div class="col-12">
+                      <form action="#" class="row">
+                        <div class="d-inline-block d-flex ps-3 pe-0">
+                          <div class="form-group d-flex">
+                            <label class="d-inline-block d-flex">
+                              <i
+                                class="fas fa-envelope fa-lg align-items-center text-secondary my-auto"
+                              ></i>
+                            </label>
+                            <input
+                              type="text"
+                              name="user"
+                              placeholder="Correo"
+                              class="form-control shadow-none d-inline-block"
+                            />
+                          </div>
+                          <div class="d-inline-block ms-auto">
+                            <button type="submit" class="btn btn-defecto">
+                              SUSCRIBIRME
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Legal -->
+            <div class="col-12 text-center pt-5 pb-3">
+              <p class="text-secondary f-copyright">
+                © kactiva.com 2022 | <a href="#">Aviso legal</a> |
+                <a href="#">Política de cookies</a> |
+                <a href="#">Política de cookies</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
